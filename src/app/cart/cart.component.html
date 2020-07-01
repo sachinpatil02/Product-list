@@ -1,0 +1,269 @@
+<!-- Modal -->
+<div class="modal cart-modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable mh-10" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">In Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <section class="cart_area">
+                    <div class="container">
+                        <div class="cart_inner">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="d-flex">
+                                                        <img src="../../assets/images/Product/f-p-3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>Minimalistic shop for multipurpose use</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5>$360.00</h5>
+                                            </td>
+                                            <td>
+                                                <div class="product_count">
+                                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+                                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button">
+                                                        <i class="fa fa-angle-up"></i>
+                                                    </button>
+                                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;" class="reduced items-count" type="button">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5>$720.00</h5>
+                                            </td>
+                                        </tr>
+                                        <tr class="bottom_button">
+                                            <td>
+                                                <a class="gray_btn" href="#">Update Cart</a>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="cupon_text">
+                                                    <input type="text" placeholder="Coupon Code">
+                                                    <a class="main_btn btn-primary" href="#">Apply</a>
+                                                    
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <h5>Subtotal</h5>
+                                            </td>
+                                            <td>
+                                                <h5>$2160.00</h5>
+                                            </td>
+                                        </tr>
+                                        <tr class="shipping_area">
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <h5>Shipping</h5>
+                                            </td>
+                                            <td>
+                                                <div class="shipping_box">
+                                                    <ul class="list">
+                                                        <li>
+                                                            <a href="#">Flat Rate: $5.00</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Free Shipping</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Flat Rate: $10.00</a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="#">Local Delivery: $2.00</a>
+                                                        </li>
+                                                    </ul>
+                                                    <h6>
+                                                        Calculate Shipping
+                                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                    </h6>
+                                                    
+                                                    <input type="text" placeholder="Postcode/Zipcode">
+                                                    <a class="gray_btn" href="#">Update Details</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="out_button_area">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="checkout_btn_inner">
+                                                    <a class="gray_btn" href="#">Continue Shopping</a>
+                                                    <a class="main_btn" href="#">Proceed to checkout</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Update Details</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+<!--Wish list Modal-->
+<div class="modal wishlist-modal" id="wishListModal" tabindex="-1" role="dialog"
+    aria-labelledby="wishListModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable mh-10" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">Your Wishlist</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <section class="wish-list">
+                    <div class="wishlist-table section_padding_100 clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="cart-table wishlist-table">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover table-fixed mb-30">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><i class="fa fa-trash"></i></th>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Product</th>
+                                                        <th scope="col">Unit Price</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col"><i class="fa fa-cart-plus"></i></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <i class="fa fa-close"></i>
+                                                        </th>
+                                                        <td>
+                                                            <img src="../../assets/images/Product/f-p-1.png" alt="Product">
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Burgundy Crepe Blouson Top</a>
+                                                        </td>
+                                                        <td>$789</td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <input type="number" class="qty-text" id="qty2" step="1" min="1" max="99" name="quantity" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="#" class="genric-btn info circle">Add to Cart</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <i class="fa fa-close"></i>
+                                                        </th>
+                                                        <td>
+                                                            <img src="../../assets/images/Product/f-p-2.png" alt="Product">
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Frill Top</a>
+                                                        </td>
+                                                        <td>$650</td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <input type="number" class="qty-text" id="qty3" step="1" min="1" max="99" name="quantity" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="#" class="genric-btn info circle">Add to Cart</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <i class="fa fa-close"></i>
+                                                        </th>
+                                                        <td>
+                                                            <img src="../../assets/images/Product/f-p-3.png" alt="Product">
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">LATEST WOMEN’S JEANS</a>
+                                                        </td>
+                                                        <td>$800</td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <input type="number" class="qty-text" id="qty4" step="1" min="1" max="99" name="quantity" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="#" class="genric-btn info circle">Add to Cart</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <i class="fa fa-close"></i>
+                                                        </th>
+                                                        <td>
+                                                            <img src="../../assets/images/Product/f-p-4.png" alt="Product">
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">LATEST WOMEN’S TOP</a>
+                                                        </td>
+                                                        <td>$800</td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <input type="number" class="qty-text" id="qty5" step="1" min="1" max="99" name="quantity" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="#" class="genric-btn info circle">Add to Cart</a></td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                
+                                    <div class="cart-footer text-right">
+                                        <div class="back-to-shop">
+                                            <a href="#" class="main_btn">Add All Item</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Update Details</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+

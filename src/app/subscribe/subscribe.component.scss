@@ -1,0 +1,61 @@
+@import"src/assets/base/_mixins.scss";
+@import"src/assets/base/_variables.scss";
+
+.offer_area {
+    /* background: url(../img/offer-bg.png) no-repeat center; */
+ background-color: #faf9ff;
+     background-size: cover;
+     @media (max-width: 991px) {
+         background: $offwhite;
+     }
+ }
+ 
+section.offer_area.subscribe-section input {
+    height: auto;   
+    padding: 19px 25px;
+    border-radius: 4rem;
+   
+}
+section.offer_area.subscribe-section .subscribe-btn .btn {
+    height: auto;
+    padding: 0;
+}
+.subscribe-btn {
+    padding: 15px 32px 15px 32px;
+    border-radius: 2rem;
+    z-index: 3;
+    align-items: center !important;
+}
+.subscribe-section .input-group {
+    -webkit-box-align: center;
+    align-items: center;
+}
+ .offer_content {
+     padding: 106px 0px 100px;
+     @media (max-width: 991px) {
+         padding: 95px 0px 90px;
+     }
+     h3 {
+         font-size: 30px;
+         font-weight: 300;
+         color: #4a4a4a;
+         @media (max-width: 991px) {
+            font-size: 28px;
+            margin-bottom: 21px !important;
+         }
+     }
+     h2 {
+         font-size: 100px;
+         line-height: 80px;
+         color: $title-color;
+         margin-bottom: 0px;
+         font-weight: 700;
+         @media (max-width: 767px) {
+             font-size: 60px;
+             line-height: 60px;
+         }
+     }
+     p {
+         margin-bottom: 12px;
+     }
+ }

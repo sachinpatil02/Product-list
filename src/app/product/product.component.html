@@ -1,0 +1,35 @@
+
+<app-header type ="home"></app-header>
+<!--================ Inspired Product Area =================-->
+<section class="inspired_product_area section_gap_bottom_custom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 box" *ngFor="let item of items">
+        <div class="single-product">
+          <div class="product-img">
+            <img class="img-fluid w-100 h-100" [src]="item.ImagePath" alt="" />
+            <div class="p_icon">
+              <a [routerLink]="['/productDetail', item.ProductID] " routerLinkActive="active"><i class="ti-eye"></i></a>
+              <a href="#"><i class="fa fa-heart-o"></i></a>
+              <!-- <a href="#"><i class="ti-shopping-cart"></i></a> -->
+              <a href="javascript:void(0)" data-toast="toast" data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!">
+                <i class="ti-shopping-cart"></i></a>
+            </div>
+          </div>
+          <div class="product-btm text-center">
+            <a href="#" class="d-block">
+              <h4>{{item.ProductName}}</h4>
+            </a>
+            <div class="mt-3">
+              <span class="mr-4">${{item.ProductPrice}}</span>
+              <!-- <del>$35.00</del> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+<!--================ End Inspired Product Area =================-->

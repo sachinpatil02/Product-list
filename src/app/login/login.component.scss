@@ -1,0 +1,75 @@
+/* Login CSS */
+.login-modal .modal-dialog {
+    max-width: 80%;
+    @media (max-width: 992px){
+     max-width: 100%;    
+    }  
+}
+.login_form {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background-color: #f8f8ff;
+    border-radius: 6px; }
+    .login_form .form-control {
+      font-size: 13px;
+      height: 45px;
+      padding: 5px 20px;
+      border-color: #d6e6fb; }
+      .login_form .form-control:focus {
+        border-color: #070a57; }
+  
+  /* Account CSS */
+  .my-account-navigation {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background-color: #f8f8ff;
+    border-radius: 6px; }
+    .my-account-navigation li a {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #d6e6fb;
+      padding-bottom: 1rem; }
+    .my-account-navigation li:last-child a {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0; }
+    .my-account-navigation li.active a {
+      color: #0f99f3; }
+  
+  .my-account-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background-color: #f8f8ff;
+    border-radius: 6px; }
+    .my-account-content p:last-child {
+      margin-bottom: 0; }
+    .my-account-content .action-btn {
+      padding: 5px 15px;
+      border-radius: 20px;
+      border: 2px solid #0f99f3;
+      font-size: 12px;
+      font-weight: 700;
+      color: #0f99f3; }
+      .my-account-content .action-btn:hover, .my-account-content .action-btn:focus {
+        border-color: #0f99f3;
+        background-color: #0f99f3;
+        color: #ffffff; }
+    .my-account-content address {
+      color: #747794; }
+    .my-account-content label {
+      font-size: 13px;
+      font-weight: 700; }
+    .my-account-content .form-control {
+      font-size: 13px;
+      height: 45px;
+      padding: 5px 20px;
+      border-color: #d6e6fb; }
+      .my-account-content .form-control:focus {
+        border-color: #070a57; }
+  
+  /* Offer CSS */
+  
