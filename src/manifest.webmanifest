@@ -5,9 +5,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
-  "prefer_related_applications": false,
-    
+  "start_url": "/product",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
