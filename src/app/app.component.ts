@@ -32,7 +32,7 @@ declare var gtag: Function;
       this.routerSubscription = this.router.events
         .pipe(filter(event => event instanceof NavigationEnd))
         .subscribe((event: NavigationEnd) => {
-          gtag('config', 'G-S3RKW3D9CZ', {'page_path': event.urlAfterRedirects});
+          gtag('config', 'G-MJ9K4C8YCG', {'page_path': event.urlAfterRedirects});
         });
     }
     ngOnDestroy(): void {
